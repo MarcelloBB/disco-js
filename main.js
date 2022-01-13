@@ -26,5 +26,7 @@ program
     .action((task) => {
         console.log(`[⏳] Task [${task}] is not finished yet`);
     });
+
+    
 // Node need this to understand commands
 program.parse(process.argv);
