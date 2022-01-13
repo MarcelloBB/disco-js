@@ -2,6 +2,17 @@
 // Import packages
 const program = require("commander");
 const package = require("./package.json");
+const Table = require("cli-table");
+
+function showTable() {
+    const table = new Table({head: ["Command", "Description"]});
+    table.push(
+        ["log", "Show a underrated message"],
+        ["add", "Do nothing"]
+    );
+
+    console.log(table.toString());
+}
 
 // Add version
 program.version(package.version);
@@ -27,6 +38,11 @@ program
         console.log(`[⏳] Task [${task}] is not finished yet`);
     });
 
-    
+program
+    .command("tabletest [a]")
+    .description("Show table tests")
+    .action((a) => {
+        showTable();
+    })
 // Node need this to understand commands
 program.parse(process.argv);
