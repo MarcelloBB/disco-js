@@ -39,9 +39,9 @@ program
     });
 
 program
-    .command("tabletest [a]")
+    .command("tabletest")
     .description("Show table tests")
-    .action((a) => {
+    .action(() => {
         showTable();
     })
 // Node need this to understand commands
