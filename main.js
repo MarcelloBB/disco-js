@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // Import packages
 const program = require("commander");
 const package = require("./package.json");
