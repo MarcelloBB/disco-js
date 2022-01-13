@@ -14,11 +14,17 @@ program.version(package.version);
 //          We use description() to give --help flag text
 
 program
-    .command("add [todo]")
-    .description("Adiciona uma tarefa")
-    .action((todo) => {
-        console.log(todo);
+    .command("add <task>")
+    .description("Add a task")
+    .action((task) => {
+        console.log(`[💡] Disco added [${task}]`);
     });
 
+program
+    .command("log <task>")
+    .description("Show task detail")
+    .action((task) => {
+        console.log(`[⏳] Task [${task}] is not finished yet`);
+    });
 // Node need this to understand commands
 program.parse(process.argv);
