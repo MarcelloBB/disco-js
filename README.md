@@ -6,7 +6,7 @@ It was made using:
 
 - _COMMANDER-JS_    
   * for the CLI 
-- _CHALK_            
+- _COLORS-JS_            
   * for colors
 - _CLI-TABLE_ 
   * for tables
