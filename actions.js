@@ -128,6 +128,22 @@ const ranAction = () => {
     console.log(``);
 }
 
+const roundAction = (a) => {
+    console.log(``);
+    console.log(`╔═══════════════════════════╗`);
+    console.log(`║         Disco-js          ║`);
+    console.log(`╚════════╦════════╦═════════╝`);
+    console.log(`         ║  v1.0  ║          `);
+    console.log(`         ╚════════╝`);
+    console.log(``);
+    console.log(` ▓ OPERATION:`);
+    console.log(`   [*] ROUND`);
+    console.log(``);
+    console.log(` ▓ RESULTS:`);
+    console.log(`   ${Math.round(a)}`);
+    console.log(``);
+}
+
 module.exports = {
     sumAction:    sumAction,
     minusAction:  minusAction,
@@ -136,5 +152,6 @@ module.exports = {
     idivAction:   idivAction,
     facAction:    facAction,
     iranAction:   iranAction,
-    ranAction:    ranAction
+    ranAction:    ranAction,
+    roundAction:  roundAction
 }
