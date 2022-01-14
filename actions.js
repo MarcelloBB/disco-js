@@ -156,7 +156,7 @@ const sqrtAction = (a) => {
     console.log(`   [*] SQUARE ROOT`);
     console.log(``);
     console.log(` ▓ RESULTS:`);
-    console.log(`   _/%{a} = ${Math.sqrt(a)}`);
+    console.log(`   _/${a} = ${Math.sqrt(a)}`);
     console.log(``);
 }
 
