@@ -33,7 +33,7 @@ program
     .command("times <a> <b>")   
     .description("Multiply two numbers")
     .action((a, b) => {
-        return (a * b)
+        actions.timesAction(a, b);
     })
 
 program 
