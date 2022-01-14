@@ -7,9 +7,9 @@ const package   = require("./package.json");
 // *******************************************************
 // Disco modules
 // *******************************************************
-const constants = require("./constants");
-const actions   = require("./actions");
-const functions = require("./functions");
+const constants = require("./lib/constants");
+const actions   = require("./lib/actions");
+const functions = require("./lib/functions");
 
 // Add version
 program.version(package.version);
