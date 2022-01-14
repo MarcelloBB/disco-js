@@ -96,7 +96,7 @@ program
     .command("sqrt <a>")   
     .description("Square root of [a]")
     .action((a) => {
-        return;
+        actions.sqrtAction(a);
     })
 
 program 

@@ -144,6 +144,22 @@ const roundAction = (a) => {
     console.log(``);
 }
 
+const sqrtAction = (a) => {
+    console.log(``);
+    console.log(`╔═══════════════════════════╗`);
+    console.log(`║         Disco-js          ║`);
+    console.log(`╚════════╦════════╦═════════╝`);
+    console.log(`         ║  v1.0  ║          `);
+    console.log(`         ╚════════╝`);
+    console.log(``);
+    console.log(` ▓ OPERATION:`);
+    console.log(`   [*] SQUARE ROOT`);
+    console.log(``);
+    console.log(` ▓ RESULTS:`);
+    console.log(`   _/%{a} = ${Math.sqrt(a)}`);
+    console.log(``);
+}
+
 module.exports = {
     sumAction:    sumAction,
     minusAction:  minusAction,
@@ -153,5 +169,6 @@ module.exports = {
     facAction:    facAction,
     iranAction:   iranAction,
     ranAction:    ranAction,
-    roundAction:  roundAction
+    roundAction:  roundAction,
+    sqrtAction:   sqrtAction
 }
