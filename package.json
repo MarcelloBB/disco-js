@@ -1,9 +1,11 @@
 {
+  "name": "disco-js",
+  "main": "main.js",
   "dependencies": {
     "cli-table": "^0.3.11",
     "commander": "^8.3.0"
   },
   "bin": {
-    "disco": "node main.js"
+    "disco": "main.js"
   }
 }
