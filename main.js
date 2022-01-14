@@ -1,48 +1,32 @@
-#!/usr/bin/env node
-// Import packages
-const program = require("commander");
-const package = require("./package.json");
-const Table = require("cli-table");
+// *******************************************************
+// 3º party modules
+// *******************************************************
+const program   = require("commander");
+const package   = require("./package.json");
 
-function showTable() {
-    const table = new Table({head: ["Command", "Description"]});
-    table.push(
-        ["log", "Show a underrated message"],
-        ["add", "Do nothing"]
-    );
+// *******************************************************
+// Disco modules
+// *******************************************************
+const constants = require("./constants");
+const actions   = require("./actions");
 
-    console.log(table.toString());
-}
 
 // Add version
 program.version(package.version);
 
-// Add first CLI program
-//          * add [todo]
-//          We use command() and then we give a string and the parameters
-// [] = optional
-// <> = required
-//          We use description() to give --help flag text
-
-program
-    .command("add <task>")
-    .description("Add a task")
-    .action((task) => {
-        console.log(`[💡] Disco added [${task}]`);
-    });
 
 program 
     .command("sum <a> <b>")   
     .description("Sum two numbers")
     .action((a, b) => {
-        return (a + b);
+        actions.sumAction(a, b);
     })
 
 program 
     .command("minus <a> <b>")   
     .description("Subtract two numbers")
     .action((a, b) => {
-        return (a - b);
+        actions.minusAction(a, b);
     })
 
 program 
@@ -91,14 +75,14 @@ program
     .command("pi")   
     .description("PI constant")
     .action(() => {
-        return;
+        console.log(constants.PI);
     })
 
 program 
     .command("e")   
     .description("E constant")
     .action(() => {
-        return;
+        console.log(constants.E);
     })
 
 program 

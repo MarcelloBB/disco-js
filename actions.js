@@ -14,6 +14,23 @@ const sumAction = (a, b) => {
     console.log(``);
 }
 
+const minusAction = (a, b) => {
+    console.log(``);
+    console.log(`╔═══════════════════════════╗`);
+    console.log(`║         Disco-js          ║`);
+    console.log(`╚════════╦════════╦═════════╝`);
+    console.log(`         ║  v1.0  ║          `);
+    console.log(`         ╚════════╝`);
+    console.log(``);
+    console.log(` ▓ OPERATION:`);
+    console.log(`   [-] MINUS`);
+    console.log(``);
+    console.log(` ▓ RESULTS:`);
+    console.log(`   ${a} - ${b} = ${parseInt(a) - parseInt(b)}`);
+    console.log(``);
+}
+
 module.exports = {
-    sumAction: sumAction
+    sumAction:    sumAction,
+    minusAction:  minusAction
 }
