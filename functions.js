@@ -14,7 +14,7 @@ module.exports = {
     // Other  functions
     // *******************************************************
     genRandomInt: function (coeficient = 10) {
-        const RANDOM_INT = round(random() * coeficient);
+        const RANDOM_INT = Math.round(Math.random() * coeficient);
         return RANDOM_INT;
     },
 

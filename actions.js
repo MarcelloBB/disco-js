@@ -96,11 +96,28 @@ const facAction = (a) => {
     console.log(``);
 }
 
+const iranAction = () => {
+    console.log(``);
+    console.log(`╔═══════════════════════════╗`);
+    console.log(`║         Disco-js          ║`);
+    console.log(`╚════════╦════════╦═════════╝`);
+    console.log(`         ║  v1.0  ║          `);
+    console.log(`         ╚════════╝`);
+    console.log(``);
+    console.log(` ▓ OPERATION:`);
+    console.log(`   [*] RANDOM INTEGER`);
+    console.log(``);
+    console.log(` ▓ RESULTS:`);
+    console.log(`   ${functions.genRandomInt()}`);
+    console.log(``);
+}
+
 module.exports = {
     sumAction:    sumAction,
     minusAction:  minusAction,
     timesAction:  timesAction,
     divAction:    divAction,
     idivAction:   idivAction,
-    facAction:    facAction
+    facAction:    facAction,
+    iranAction:   iranAction
 }

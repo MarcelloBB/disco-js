@@ -58,15 +58,15 @@ program
     })
 
 program 
-    .command("iran [coef]")   
+    .command("iran")   
     .description("Random integer")
     .action(() => {
-        return
+        actions.iranAction();
     })
 
 program 
-    .command("ran [coef]")   
-    .description("Sum two numbers")
+    .command("ran")   
+    .description("Random number (float)")
     .action((coef) => {
         return;
     })
