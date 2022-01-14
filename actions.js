@@ -160,6 +160,22 @@ const sqrtAction = (a) => {
     console.log(``);
 }
 
+const powAction = (a, b) => {
+    console.log(``);
+    console.log(`╔═══════════════════════════╗`);
+    console.log(`║         Disco-js          ║`);
+    console.log(`╚════════╦════════╦═════════╝`);
+    console.log(`         ║  v1.0  ║          `);
+    console.log(`         ╚════════╝`);
+    console.log(``);
+    console.log(` ▓ OPERATION:`);
+    console.log(`   [^] POWER`);
+    console.log(``);
+    console.log(` ▓ RESULTS:`);
+    console.log(`   ${a} ^ ${b} = ${Math.pow(parseFloat(a), parseFloat(b))}`);
+    console.log(``);
+}
+
 module.exports = {
     sumAction:    sumAction,
     minusAction:  minusAction,
@@ -170,5 +186,6 @@ module.exports = {
     iranAction:   iranAction,
     ranAction:    ranAction,
     roundAction:  roundAction,
-    sqrtAction:   sqrtAction
+    sqrtAction:   sqrtAction,
+    powAction:    powAction
 }

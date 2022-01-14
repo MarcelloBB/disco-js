@@ -103,7 +103,7 @@ program
     .command("pow <a> <b>")   
     .description("Pow of base [a] and exp [b]")
     .action((a, b) => {
-        return;
+        actions.powAction(a, b);
     })
 
 // Node need this to understand commands
