@@ -40,7 +40,7 @@ program
     .command("div <a> <b>")   
     .description("Divide two numbers")
     .action((a, b) => {
-        return (a / b);
+        actions.divAction(a, b);
     })
 
 program 
