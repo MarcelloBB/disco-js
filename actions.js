@@ -1,3 +1,5 @@
+const functions = require("./functions");
+
 const sumAction = (a, b) => {
     console.log(``);
     console.log(`╔═══════════════════════════╗`);
@@ -78,10 +80,27 @@ const idivAction = (a, b) => {
     console.log(``);
 }
 
+const facAction = (a) => {
+    console.log(``);
+    console.log(`╔═══════════════════════════╗`);
+    console.log(`║         Disco-js          ║`);
+    console.log(`╚════════╦════════╦═════════╝`);
+    console.log(`         ║  v1.0  ║          `);
+    console.log(`         ╚════════╝`);
+    console.log(``);
+    console.log(` ▓ OPERATION:`);
+    console.log(`   [***] FACTORIAL`);
+    console.log(``);
+    console.log(` ▓ RESULTS:`);
+    console.log(`   ${a}! = ${functions.goFactorial(parseInt(a))}`);
+    console.log(``);
+}
+
 module.exports = {
     sumAction:    sumAction,
     minusAction:  minusAction,
     timesAction:  timesAction,
     divAction:    divAction,
-    idivAction:   idivAction
+    idivAction:   idivAction,
+    facAction:    facAction
 }

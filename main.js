@@ -9,7 +9,7 @@ const package   = require("./package.json");
 // *******************************************************
 const constants = require("./constants");
 const actions   = require("./actions");
-
+const functions = require("./functions");
 
 // Add version
 program.version(package.version);
@@ -54,7 +54,7 @@ program
     .command("fac <a>")   
     .description("Factorial of a integer")
     .action((a) => {
-        return a;
+        actions.facAction(a);
     })
 
 program 
