@@ -47,7 +47,7 @@ program
     .command("idiv <a> <b>")   
     .description("Int division of two numbers")
     .action((a, b) => {
-        return (a / b);
+        actions.idivAction(a, b);
     })
 
 program 

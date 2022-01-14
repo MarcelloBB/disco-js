@@ -62,9 +62,26 @@ const divAction = (a, b) => {
     console.log(``);
 }
 
+const idivAction = (a, b) => {
+    console.log(``);
+    console.log(`╔═══════════════════════════╗`);
+    console.log(`║         Disco-js          ║`);
+    console.log(`╚════════╦════════╦═════════╝`);
+    console.log(`         ║  v1.0  ║          `);
+    console.log(`         ╚════════╝`);
+    console.log(``);
+    console.log(` ▓ OPERATION:`);
+    console.log(`   [/] INT DIVISION`);
+    console.log(``);
+    console.log(` ▓ RESULTS:`);
+    console.log(`   ${a} / ${b} = ${Math.round(parseFloat(a) / parseFloat(b))}`);
+    console.log(``);
+}
+
 module.exports = {
     sumAction:    sumAction,
     minusAction:  minusAction,
     timesAction:  timesAction,
-    divAction:    divAction
+    divAction:    divAction,
+    idivAction:   idivAction
 }
