@@ -16,8 +16,14 @@ module.exports = {
     genRandomInt: function (coeficient = 10) {
         const RANDOM_INT = round(random() * coeficient);
         return RANDOM_INT;
+    },
+
+    goFactorial: function (number) {
+        let rval = 1;
+        for (let i = 2; i <= number; i++) {
+            rval = rval * i;
+        }
+        return rval;
     }
 }
 /* =========================================================*/
-
-console.log(exp(10))
