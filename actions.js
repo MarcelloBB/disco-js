@@ -112,6 +112,22 @@ const iranAction = () => {
     console.log(``);
 }
 
+const ranAction = () => {
+    console.log(``);
+    console.log(`╔═══════════════════════════╗`);
+    console.log(`║         Disco-js          ║`);
+    console.log(`╚════════╦════════╦═════════╝`);
+    console.log(`         ║  v1.0  ║          `);
+    console.log(`         ╚════════╝`);
+    console.log(``);
+    console.log(` ▓ OPERATION:`);
+    console.log(`   [*] RANDOM FLOAT`);
+    console.log(``);
+    console.log(` ▓ RESULTS:`);
+    console.log(`   ${Math.random()}`);
+    console.log(``);
+}
+
 module.exports = {
     sumAction:    sumAction,
     minusAction:  minusAction,
@@ -119,5 +135,6 @@ module.exports = {
     divAction:    divAction,
     idivAction:   idivAction,
     facAction:    facAction,
-    iranAction:   iranAction
+    iranAction:   iranAction,
+    ranAction:    ranAction
 }

@@ -68,7 +68,7 @@ program
     .command("ran")   
     .description("Random number (float)")
     .action((coef) => {
-        return;
+        actions.iranAction();
     })
 
 program 
