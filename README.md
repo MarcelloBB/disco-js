@@ -3,7 +3,11 @@
 _disco-js_ is a simple CLI that can do some math operations. 
 
 ## License
-To be continued
+Disco-js is under the terms of the MIT License
+
+## Installing
+
+## Using
 
 ## Author
-Marcello Belanda, 2021
+Marcello B.
