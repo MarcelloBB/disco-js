@@ -1,6 +1,6 @@
 # disco-js
 
-_disco-js_ is a simple CLI that can do some math operations. 
+_disco-js_ is a simple CLI that can do some mathematical operations. 
 
 ## Installing
 
